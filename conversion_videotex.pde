@@ -1,4 +1,4 @@
-// Télécharger Minitel11 pour créer un fichier Vidéotex avec Processing :
+// Télécharger Minitel11 pour créer un fichier Vidéotex d'une image avec Processing :
 // https://drive.google.com/file/d/0BxdNVN-CFfF5aTdUUU1uREsxZ3M/view
 
 // Le programme qui suit provient de la source suivante :
