@@ -1,3 +1,5 @@
+// Source : http://bizets.blogspot.fr/2015/01/minitel-arduino-kac.html
+
 String chaine="";
 
 void setup() {
