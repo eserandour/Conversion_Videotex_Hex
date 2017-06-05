@@ -1,4 +1,8 @@
-// Source : http://bizets.blogspot.fr/2015/01/minitel-arduino-kac.html
+// Télécharger Minitel11 pour créer un fichier Vidéotex avec Processing :
+// https://drive.google.com/file/d/0BxdNVN-CFfF5aTdUUU1uREsxZ3M/view
+
+// Le programme qui suit provient de la source suivante :
+// http://bizets.blogspot.fr/2015/01/minitel-arduino-kac.html
 
 String chaine="";
 
