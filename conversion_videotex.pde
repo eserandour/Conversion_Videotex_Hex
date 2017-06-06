@@ -3,6 +3,7 @@
 
 // Le programme qui suit provient de la source suivante :
 // http://bizets.blogspot.fr/2015/01/minitel-arduino-kac.html
+// Ont été modifiées les valeurs de sorties (hexadécimales à la place de décimales)
 
 String chaine="";
 
@@ -16,7 +17,7 @@ void draw() {
 }
 
 void loadTex() {
-  selectInput("Choisir le fichier videoTex à charger", "fichierOuvrir");
+  selectInput("Choisir le fichier Vidéotex à charger", "fichierOuvrir");
 }
 
 void fichierOuvrir(File selection) {
@@ -25,12 +26,12 @@ void fichierOuvrir(File selection) {
   } else {
     println("User selected " + selection.getAbsolutePath());
     byte[] tab = loadBytes(selection.getAbsolutePath());
-    chaine = ""+ tab[0];
+    chaine = "" + hex(tab[0]);
     for (int i = 1; i<tab.length; i++) {
-      chaine = chaine + "," +tab[i] ;
+      chaine = chaine + "," + hex(tab[i]) ;
     }
-    println("longueur de la trame : " + tab.length);
-    println("à copier dans Arduino : ");
+    println("Longueur de la trame : " + tab.length);
+    println("A copier dans Arduino : ");
     println(chaine);
   }
 }
