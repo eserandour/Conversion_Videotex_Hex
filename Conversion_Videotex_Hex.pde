@@ -5,7 +5,7 @@
 // http://bizets.blogspot.fr/2015/01/minitel-arduino-kac.html
 // Ont été modifiées les valeurs de sorties (hexadécimales à la place de décimales)
 
-String chaine="";
+String chaine = "";
 
 void setup() {
   size(200, 200);
@@ -28,7 +28,7 @@ void fichierOuvrir(File selection) {
     byte[] tab = loadBytes(selection.getAbsolutePath());
     chaine = "0x" + hex(tab[0]);
     for (int i = 1; i<tab.length; i++) {
-      chaine = chaine + ",0x" + hex(tab[i]) ;
+      chaine += ",0x" + hex(tab[i]);
     }
     println("Longueur de la trame : " + tab.length);
     println("A copier dans Arduino : ");
