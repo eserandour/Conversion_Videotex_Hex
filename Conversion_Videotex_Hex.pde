@@ -26,7 +26,7 @@ void fichierOuvrir(File selection) {
   } else {
     println("User selected " + selection.getAbsolutePath());
     byte[] tab = loadBytes(selection.getAbsolutePath());
-    chaine = "" + "0x" + hex(tab[0]);
+    chaine = "0x" + hex(tab[0]);
     for (int i = 1; i<tab.length; i++) {
       chaine = chaine + ",0x" + hex(tab[i]) ;
     }
