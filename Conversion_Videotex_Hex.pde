@@ -26,9 +26,9 @@ void fichierOuvrir(File selection) {
   } else {
     println("User selected " + selection.getAbsolutePath());
     byte[] tab = loadBytes(selection.getAbsolutePath());
-    chaine = "" + hex(tab[0]);
+    chaine = "" + "0x" + hex(tab[0]);
     for (int i = 1; i<tab.length; i++) {
-      chaine = chaine + "," + hex(tab[i]) ;
+      chaine = chaine + ",0x" + hex(tab[i]) ;
     }
     println("Longueur de la trame : " + tab.length);
     println("A copier dans Arduino : ");
